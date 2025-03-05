@@ -10,7 +10,7 @@ describe('getting started guide', () => {
     app = spawn('node', ['index.js'])
     app.stdout.on('data', (data) => console.log(data.toString()))
     // give the server a short time to start up
-    return new Promise(resolve => setTimeout(resolve, 500))
+    return new Promise(resolve => setTimeout(resolve, 2000))
   })
 
   afterEach(() => {
